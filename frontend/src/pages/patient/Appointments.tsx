@@ -74,7 +74,7 @@ function Appointments() {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/api/appointments/patient/${encodeURIComponent(
+        `https://mediflow-backend-ieau.onrender.com/api/appointments/patient/${encodeURIComponent(
           patientEmail
         )}`,
         {

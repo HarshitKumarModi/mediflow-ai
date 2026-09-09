@@ -28,7 +28,7 @@ function Doctors() {
   // ============================================================
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/doctors")
+    fetch("https://mediflow-backend-ieau.onrender.com/api/doctors")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to load doctors");
@@ -143,7 +143,7 @@ function Doctors() {
 
     const token = localStorage.getItem("token");
 
-    fetch("http://localhost:8080/api/appointments", {
+    fetch("https://mediflow-backend-ieau.onrender.com/api/appointments",  {
      method: "POST",
      headers: {
         "Content-Type": "application/json",
